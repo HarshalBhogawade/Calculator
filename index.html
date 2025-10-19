@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<!-- Notes -->
+ <!-- Eval builtin function of javascript is used evaluates the string expression -->
+  <!-- Event listner of javascript is used to add nums to the display ie we can say we adding that num to a string display -->
+<body>
+    <div class="bg-cyan-200 h-[100vh] w-full flex justify-center items-center rounded-[10px] px-4">
+        <div class="calculator flex bg-gray-400 flex-col h-auto py-6 w-full max-w-[400px] items-center justify-center rounded-[10px]">
+            <div class="w-full flex justify-center">
+                <input type="text" name="display" id="display" class= "bg-slate-700 text-white h-[50px] w-[85%] sm:w-[300px] mb-1 rounded-[5px] text-right border font-semibold text-2xl px-2">
+            </div>
+
+            <!-- Row 1 -->
+            <div class="flex flex-wrap gap-3 w-[85%] sm:w-[300px]">
+                <input type="button" value="AC" onclick="display.value = ''"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer   active:scale-95 transition duration-500 "  >
+                <input type="button" value="DE" onclick="display.value=display.value.slice(0,-1)"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="." onclick="display.value += '.'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="/" onclick="display.value += '/'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+
+                <!-- Row 2 -->
+                <input type="button" value="7" onclick="display.value += '7'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="8" onclick="display.value += '8'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="9" onclick="display.value += '9'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="*" onclick="display.value += '*'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+
+                <!-- Row 3 -->
+                <input type="button" value="4" onclick="display.value += '4'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="5" onclick="display.value += '5'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="6" onclick="display.value += '6'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="-" onclick="display.value += '-'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+
+                <!-- Row 4 -->
+                <input type="button" value="1" onclick="display.value += '1'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="2" onclick="display.value += '2'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="3" onclick="display.value += '3'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="+" onclick="display.value += '+'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-cyan-400 rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+
+                <!-- Row 5 -->
+                <input type="button" value="00" onclick="display.value += '00'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="0" onclick="display.value += '0'"
+                    class="w-[calc((100%-3*0.75rem)/4)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 ">
+                <input type="button" value="=" onclick="display.value = eval(display.value)"
+                    class="w-[calc(2*(100%-3*0.75rem)/4+0.75rem)] h-16 bg-slate-700 text-white rounded-xl font-semibold cursor-pointer active:scale-95 transition duration-500 "> 
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
