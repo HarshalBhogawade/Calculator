@@ -1,5 +1,7 @@
 # Calculator
 
+<img width="300" height="500" alt="Screenshot 2025-10-27 222617" src="https://github.com/user-attachments/assets/19db0ce8-575d-4fd2-92b1-0d745d897437" />
+
 ## What is used to build this?
 - HTML
 - Tailwind CSS
